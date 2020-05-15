@@ -2,7 +2,9 @@
 
 Setup:
 1>Clone the project 
+
 2>npm install to install all dependencies
+
 3>start using node index.js
 
 
