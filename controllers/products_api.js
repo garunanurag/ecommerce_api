@@ -58,7 +58,7 @@ module.exports.updateProduct = async function(req, res){
     try{
         //find the product and update the qunatity
         let product = await Product.findById(req.params.id);
-        product.quantity += parseInt(req.body.number);
+        product.quantity += parseInt(req.body.quantity);
         product.save();
 
         return res.status(200).json({
