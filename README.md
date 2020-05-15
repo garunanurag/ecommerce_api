@@ -19,7 +19,7 @@ Setup:
  
 **response** 
 
-"data": {
+ {
         "products": 
         
         [
@@ -50,7 +50,7 @@ Setup:
     quantity: 10
   }
   
-  provide the two fields along with their values in the body in x-www-form-urlencoded format
+  x-www-form-urlencoded format
  
  
 ### 3. Delete a product  
@@ -64,9 +64,30 @@ Setup:
   Method: POST
   
   URL: http://localhost:8000/products/:id/update_quantity
+  
     Request format:
     {
-    quantity: 10
-  }
-  provide the quantity value in the body in x-www-form-urlencoded format
+    quantity: 200
+    }
+  
+  
+**response**
+
+
+    {
+        "product": 
+        
+            "_id": "5ebeaefee4ef0f027815049c",
+            "name": " laptop,",
+            "quantity": 310,
+            "createdAt": "2020-05-15T15:02:22.136Z",
+            "updatedAt": "2020-05-15T15:10:37.499Z",
+            "__v": 0
+        
+    
+    "message": "updated successfully"
+}
+
+
+x-www-form-urlencoded format
 
