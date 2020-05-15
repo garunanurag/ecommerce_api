@@ -12,11 +12,14 @@ Setup:
 
 ### 1. List all products
  Method: GET
+ 
  URL: http://localhost:8000/products/
  
   
 ### 2. Add a product
   Method: POST
+  
+  
   URL: http://localhost:8000/products/create
   Request format:
     product: {
@@ -28,13 +31,15 @@ Setup:
  
 ### 3. Delete a product  
  Method: DELETE
- URL: http://localhost:8000/ap/products/:id
+ 
+ URL: http://localhost:8000/products/:id
  
  
   
 ### 4. Update a product
   Method: POST
-  URL: http://localhost:8000/api/products/:id/update_quantity
+  
+  URL: http://localhost:8000/products/:id/update_quantity
     Request format:
     {
     quantity: 10
