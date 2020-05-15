@@ -17,6 +17,25 @@ Setup:
  
  URL: http://localhost:8000/products/
  
+**response** 
+
+"data": {
+        "products": 
+        
+        [
+           
+                "_id": "5ebea52874a17141e8a2a76b",
+                "name": " lslstop,",
+                "quantity": 120
+            
+            
+                "_id": "5ebeaefee4ef0f027815049c",
+                "name": " laptop,",
+                "quantity": 310
+           
+        ]
+    
+}
   
 ### 2. Add a product
   Method: POST
@@ -25,6 +44,7 @@ Setup:
   URL: http://localhost:8000/products/create
   
   Request format:
+  
     product: {
     name: laptop,
     quantity: 10
