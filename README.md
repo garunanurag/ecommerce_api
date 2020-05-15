@@ -21,11 +21,13 @@ Setup:
   
   
   URL: http://localhost:8000/products/create
+  
   Request format:
     product: {
     name: laptop,
     quantity: 10
   }
+  
   provide the two fields along with their values in the body in x-www-form-urlencoded format
  
  
